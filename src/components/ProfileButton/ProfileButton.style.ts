@@ -1,22 +1,6 @@
 import { makeStyles } from "@material-ui/core";
-import { textColors } from "_config/theme";
 
 export const useStyles = makeStyles({
-  header:{
-    height: '131px',
-  },
-
-  title: {
-    fontWeight: 700,
-    fontSize: 20,
-    color: textColors.primary,
-    "& + #pd-subtitle": {
-      marginTop: 24,
-    },
-    "& + #pd-description": {
-      marginTop: 8,
-    },
-  },
 
   activeAccount:{
     display: "flex",
@@ -88,7 +72,6 @@ export const useStyles = makeStyles({
   inputSearchContainerReference:{
     position: 'relative',
     marginTop: '4px',
-    zIndex: 10,
     
     '& .inputSearchContainer':{
       position: 'absolute',
@@ -110,7 +93,6 @@ export const useStyles = makeStyles({
         height: '100%',
         width: '100%',
         border: 'none',
-        fontFamily: 'Roboto',
       },
 
       '& input::placeholder':{
@@ -119,12 +101,6 @@ export const useStyles = makeStyles({
         fontSize: '12px',
         lineHeight: '14.06px',
       }
-    },
-  },
-
-  divider: {
-    height: '0.5px',
-    backgroundColor: '#E8E8E8',
-  },
-  
+    }
+  }
 });

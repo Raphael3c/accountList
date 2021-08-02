@@ -1,9 +1,12 @@
 import React from "react";
-import { Box, Typography, Button, Divider } from "@material-ui/core";
+import { Box, Typography, Divider } from "@material-ui/core";
 import { useStyles } from "./ProcessDescriptionHeader.style";
 import personFemIcon from '_assets/img/icn-persona-fem.svg';
+import searchIcon from '_assets/img/search-icon.svg';
 import checked from '_assets/img/icn-check.svg';
-import searchIcon from '_assets/img/search-icon.svg'
+
+
+import { ProfileButton } from 'components/ProfileButton'
 
 interface TitleAndDescritionProps {
   title: string;
@@ -20,23 +23,18 @@ export const ProcessDescriptionHeader = ({
         {title}
       </Typography>
       <Box>
-        <Button size="small" className={styles.buttonHeader}>
-          <Box className={styles.activeAccount}>
-            <Box className={styles.boxInformation}>
-              <img src={personFemIcon} alt="Ícone Feminino" />
-              <Box>
-                <span className="name"><strong>Luiza Ananda Macêdo</strong></span>
-                <Box className={styles.boxAccountType}>
-                  <p className="account">Conta 12345-0</p>
-                  <p className="type">Banquinho</p>
-                </Box>
-              </Box>
-            </Box>
-            <span className={styles.alignCheckedInCenter}><img src={checked} width="25" height="25" alt="Conta atual" /></span>
-          </Box>
-        </Button>
+        
+        <ProfileButton 
+          icon={personFemIcon} 
+          name={"Luiza Ananda Macêdo"} 
+          accountNumber={"12345-0"} 
+          accountType={"Banquinho"}
+          src={checked}
+          width="25"
+          height="25"
+          />
 
-        <Divider />
+        <Divider className={styles.divider}/>
 
         <div className={styles.inputSearchContainerReference}>
           <div className="inputSearchContainer">

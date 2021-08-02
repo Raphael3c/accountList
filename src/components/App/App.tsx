@@ -1,20 +1,14 @@
 import React from 'react';
-import {PageContainer} from 'components/PageContainer'
-import {ProcessPageLayout} from 'components/ProcessPageLayout';
-import {ProcessDescriptionHeader} from 'components/ProcessDescriptionHeader';
+import { Router } from 'components/Router'
+import { ThemeProvider } from '@material-ui/core'
+import { theme } from '_config/theme'
+
 import './App.scss'
 
 export const App: React.FC = () => {
   return (
-    <PageContainer>
-        <ProcessPageLayout 
-          header={
-            <ProcessDescriptionHeader 
-              title={"Todas as contas"}
-            />
-          }
-        
-        />
-    </PageContainer> 
+    <ThemeProvider theme={theme}>
+      <Router />
+    </ThemeProvider>
   );
 }
