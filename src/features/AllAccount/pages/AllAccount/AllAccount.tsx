@@ -2,7 +2,7 @@ import React from 'react';
 import {PageContainer} from 'components/PageContainer'
 import {ProcessPageLayout} from 'components/ProcessPageLayout';
 import {ProcessDescriptionHeader} from 'components/ProcessDescriptionHeader';
-import { AllAccountList } from 'components/AllAccountList';
+import { AllAccountList } from 'features/AllAccount/components/AllAccountList';
 import { ProcessPageFooter } from 'components/ProcessPageFooter/ProcessPageFooter';
 
 export const AllAccount: React.FC = () => {
