@@ -44,7 +44,7 @@ export const useStyles = makeStyles({
       fontStyle: 'normal',
       fontWeight: 400,
       lineHeight: '14px',
-      letterSpacing: '0em',
+      letterSpacing: '0.34px',
       color: '#555555',
     },
 
@@ -55,7 +55,7 @@ export const useStyles = makeStyles({
       fontWeight: 400,
       lineHeight: '14px',
       color: '#555555',
-      letterSpacing: '0em',
+      letterSpacing: '0.34px',
     }
   },
 

@@ -20,9 +20,7 @@ export const AllAccount: React.FC = () => {
           }
 
           footer={
-            <ProcessPageFooter>
-
-            </ProcessPageFooter>
+            <ProcessPageFooter />
           }
         
         />

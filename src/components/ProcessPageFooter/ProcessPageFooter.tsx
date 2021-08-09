@@ -18,9 +18,9 @@ export const ProcessPageFooter: React.FC<ProcessPageFooterProps> = ({
     <Box className={styles.buttonsWrapper}>
       <Button
         palette="secondary"
-        startIcon={<img src={backIcon} alt="Voltar"/>}
+        startIcon={<img src={backIcon} className={styles.imgBack} width="8" height="14" alt="Voltar"/>}
       >
-        Voltar
+        <span className={styles.backLabel}>Voltar</span>
       </Button>
       {primaryButton}
     </Box>

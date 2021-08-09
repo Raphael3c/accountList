@@ -30,7 +30,7 @@ export const useStyles = makeStyles<typeof theme, StylesProps>({
   },
   footer: {
     width: "100%",
-    padding: padding,
+    padding: "16px 16px 24px 16px",
     position: ({ footerPosition }) => footerPosition ?? "relative",
     bottom: 0,
     left: 0,
